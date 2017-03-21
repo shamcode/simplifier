@@ -1,0 +1,9 @@
+npm-debug.log
+node_modules
+
+.DS_Store
+.idea
+Thumbs.db
+
+/test/assets
+/dist/
