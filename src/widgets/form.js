@@ -4,8 +4,6 @@ export default class Form extends Widget {
     @options
     onSubmit() {}
 
-    render() {}
-
     bindEvents() {
         document
             .querySelector( this.containerSelector )
