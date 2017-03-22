@@ -1,2 +1,2 @@
-# sham-ui-label-widget
-Text label widget for shamUI (https://github.com/shamcode/shamUI)
+# Demo for logic-expression-simplifier
+Text label widget for shamUI (https://github.com/shamcode/logic-expression-simplify)
