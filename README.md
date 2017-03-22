@@ -1,2 +1,5 @@
 # Demo for logic-expression-simplifier
-Text label widget for shamUI (https://github.com/shamcode/logic-expression-simplify)
+
+Demo application for https://github.com/shamcode/logic-expression-simplify
+
+http://simplifier.shamcode.ru/
