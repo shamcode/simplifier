@@ -5,7 +5,7 @@ import Label from 'sham-ui-label-widget';
 
 export default function() {
 
-    let simplifiedExpresion = '';
+    let simplifiedExpression = '';
 
     const input = new Input( '#input-text', 'input' );
 
@@ -14,9 +14,9 @@ export default function() {
             evt.preventDefault();
             const expression = input.value;
             try {
-                simplifiedExpresion = simplify( expression );
+                simplifiedExpression = simplify( expression );
             } catch (e) {
-                simplifiedExpresion = '';
+                simplifiedExpression = '';
             }
             this.UI.render.ALL();
             return false;
@@ -25,7 +25,7 @@ export default function() {
 
     new Label( '#result', 'result', {
         text() {
-            return simplifiedExpresion;
+            return simplifiedExpression;
         }
     } )
 };
