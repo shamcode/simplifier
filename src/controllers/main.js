@@ -1,31 +1,30 @@
+import { DI } from 'sham-ui';
 import simplify from 'logic-expression-simplify';
-import Input from '../widgets/input';
-import Form from '../widgets/form';
-import Label from 'sham-ui-label-widget';
+import App from '../widgets/App.sht';
 
 export default function() {
-
-    let simplifiedExpression = '';
-
-    const input = new Input( '#input-text', 'input' );
-
-    new Form( 'main > form', 'form', {
-        onSubmit( evt ) {
+    const app = new App( 'body', 'app', {
+        result: '',
+        onSubmit( evt, { expression } ) {
             evt.preventDefault();
-            const expression = input.value;
+
+            let simplifiedExpression;
             try {
                 simplifiedExpression = simplify( expression );
             } catch (e) {
                 simplifiedExpression = '';
             }
-            this.UI.render.ALL();
+
+            this.update( {
+                result: simplifiedExpression
+            } );
+
             return false;
+        },
+        afterRender() {
+            this.update();
         }
     } );
 
-    new Label( '#result', 'result', {
-        text() {
-            return simplifiedExpression;
-        }
-    } )
+    DI.bind( 'widgets:app', app );
 };

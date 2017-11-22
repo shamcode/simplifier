@@ -33,8 +33,12 @@ main {
     margin-left: auto;
     margin-right: auto;
     max-width: 80%;
+    * {
+      margin-top: 30px;
+    }
     #input-text {
       width: 70%;
+      min-width: 200px;
       background-color: #201f1e;
       background-image: none;
       border: 1px solid rgba(0, 0, 0, 0.4);
@@ -45,9 +49,11 @@ main {
       line-height: 18px;
       color: #fff;
       vertical-align: middle;
+      margin-right: 1%;
     }
     button[type="submit"] {
       width: 25%;
+      min-width: 130px;
       display: inline-block;
       color: #fff;
       background: none repeat scroll 0 0 #2d2c2a;
@@ -80,4 +86,17 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+@media (max-width: 890px) {
+  main {
+    form {
+      #input-text,
+      button[type="submit"] {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
 }

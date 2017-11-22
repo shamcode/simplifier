@@ -1,0 +1,13 @@
+{% import Header from './Header.sht' %}
+{% import Footer from './Footer.sht' %}
+{% import Form from './Form' %}
+{% import DisplayResult from './DisplayResult.sht' %}
+
+<Header/>
+<main>
+    <Form
+        onSubmit={{this.options.onSubmit.bind( this )}}
+    />
+    <DisplayResult result={{result}}/>
+</main>
+<Footer/>

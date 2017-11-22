@@ -1,0 +1,11 @@
+{% import Input from './Input' %}
+
+<form>
+    <Input
+            id="input-text"
+            tabindex="1"
+            placeholder="(a && b) || (!a && !b)"
+            name="expresion"
+    />
+    <button type="submit" tabindex="2">Simplify!</button>
+</form>
