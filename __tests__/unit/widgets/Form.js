@@ -22,7 +22,7 @@ it( 'onSubmit options', () => {
 
     expect( meta.toJSON() ).toMatchSnapshot();
     expect( fn.mock.calls.length ).toBe( 1 );
-    expect( fn.mock.calls[0][1] ).toEqual( { expression: 'a && b' } );
+    expect( fn.mock.calls[ 0 ][ 1 ] ).toEqual( { expression: 'a && b' } );
 } );
 
 
@@ -40,5 +40,5 @@ it( 'onSubmit props', () => {
 
     expect( meta.toJSON() ).toMatchSnapshot();
     expect( fn.mock.calls.length ).toBe( 1 );
-    expect( fn.mock.calls[0][1] ).toEqual( { expression: 'a && b' } );
+    expect( fn.mock.calls[ 0 ][ 1 ] ).toEqual( { expression: 'a && b' } );
 } );
