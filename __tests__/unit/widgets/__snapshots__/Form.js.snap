@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`onSubmit options 1`] = `
+Object {
+  "ID": "widget",
+  "__data__": Object {
+    "actionSequence": Array [
+      "render",
+      "bindEvents",
+    ],
+    "onSubmit": [Function],
+    "renderAsync": false,
+    "renderDependence": Array [],
+    "types": Array [],
+  },
+  "html": "<form><input id=\\"input-text\\" placeholder=\\"(a &amp;&amp; b) || (!a &amp;&amp; !b)\\" tabindex=\\"1\\" name=\\"expresion\\"><!--Input--><button type=\\"submit\\" tabindex=\\"2\\">Simplify!</button></form>",
+  "nodes": Array [
+    Object {
+      "ID": undefined,
+      "__data__": null,
+      "html": null,
+      "nodes": null,
+      "options": null,
+    },
+  ],
+  "options": Object {
+    "actionSequence": Array [
+      "render",
+      "bindEvents",
+    ],
+    "onSubmit": [Function],
+    "renderAsync": false,
+    "renderDependence": Array [],
+    "types": Array [],
+  },
+}
+`;
+
+exports[`onSubmit props 1`] = `
+Object {
+  "ID": "widget",
+  "__data__": Object {
+    "actionSequence": Array [
+      "render",
+      "bindEvents",
+    ],
+    "onSubmit": [Function],
+    "renderAsync": false,
+    "renderDependence": Array [],
+    "types": Array [],
+  },
+  "html": "<form><input id=\\"input-text\\" placeholder=\\"(a &amp;&amp; b) || (!a &amp;&amp; !b)\\" tabindex=\\"1\\" name=\\"expresion\\"><!--Input--><button type=\\"submit\\" tabindex=\\"2\\">Simplify!</button></form>",
+  "nodes": Array [
+    Object {
+      "ID": undefined,
+      "__data__": null,
+      "html": null,
+      "nodes": null,
+      "options": null,
+    },
+  ],
+  "options": Object {
+    "actionSequence": Array [
+      "render",
+      "bindEvents",
+    ],
+    "onSubmit": [Function],
+    "renderAsync": false,
+    "renderDependence": Array [],
+    "types": Array [],
+  },
+}
+`;
+
+exports[`renders correctly 1`] = `
+Object {
+  "ID": "widget",
+  "__data__": Object {
+    "actionSequence": Array [
+      "render",
+      "bindEvents",
+    ],
+    "onSubmit": [Function],
+    "renderAsync": false,
+    "renderDependence": Array [],
+    "types": Array [],
+  },
+  "html": "<form><input id=\\"input-text\\" placeholder=\\"(a &amp;&amp; b) || (!a &amp;&amp; !b)\\" tabindex=\\"1\\" name=\\"expresion\\"><!--Input--><button type=\\"submit\\" tabindex=\\"2\\">Simplify!</button></form>",
+  "nodes": Array [
+    Object {
+      "ID": undefined,
+      "__data__": null,
+      "html": null,
+      "nodes": null,
+      "options": null,
+    },
+  ],
+  "options": Object {
+    "actionSequence": Array [
+      "render",
+      "bindEvents",
+    ],
+    "onSubmit": [Function],
+    "renderAsync": false,
+    "renderDependence": Array [],
+    "types": Array [],
+  },
+}
+`;

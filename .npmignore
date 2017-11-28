@@ -1,1 +1,3 @@
 /src/
+/coverage/
+/__tests__/

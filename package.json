@@ -5,10 +5,13 @@
   "license": "MIT",
   "scripts": {
     "start": "node server.js",
+    "test": "jest --coverage",
+    "watch": "jest --watchAll",
     "build": "WEBPACK_ENV=build webpack"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
     "babel-loader": "^6.3.0",
     "babel-plugin-transform-class-properties": "^6.18.0",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
@@ -18,14 +21,17 @@
     "css-loader": "^0.27.3",
     "express": "^4.13.4",
     "extract-text-webpack-plugin": "^2.1.0",
+    "jest": "^21.2.1",
     "node-sass": "^4.5.0",
     "sass-loader": "^6.0.3",
     "sham-ui-templates": "0.0.13",
     "sham-ui-templates-loader": "1.0.11",
+    "sham-ui-test-helpers": "^1.6.0",
     "style-loader": "^0.14.1",
     "webpack": "^2.2.1",
     "webpack-dev-middleware": "^1.12.0",
-    "webpack-hot-middleware": "^2.20.0"
+    "webpack-hot-middleware": "^2.20.0",
+    "sham-ui-jest-preprocessor": "1.0.1"
   },
   "dependencies": {
     "logic-expression-simplify": "0.0.2",
@@ -39,6 +45,15 @@
       "transform-decorators-legacy",
       "transform-class-properties",
       "transform-es2015-modules-umd"
+    ]
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.sht$": "sham-ui-jest-preprocessor",
+      "^.+\\.js$": "babel-jest"
+    },
+    "collectCoverageFrom": [
+      "src/**/*.js"
     ]
   }
 }
