@@ -20,9 +20,6 @@ export default function() {
             } );
 
             return false;
-        },
-        afterRender() {
-            this.update();
         }
     } );
 

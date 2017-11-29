@@ -30,6 +30,7 @@ Object {
     ],
     "renderAsync": false,
     "renderDependence": Array [],
+    "result": "a && b",
     "types": Array [],
   },
 }

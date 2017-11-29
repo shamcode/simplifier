@@ -3,34 +3,6 @@
 exports[`renders correctly 1`] = `
 Object {
   "ID": "widget",
-  "__data__": Object {},
-  "html": "<input>",
-  "nodes": Array [
-    Object {
-      "ID": undefined,
-      "__data__": null,
-      "html": null,
-      "nodes": null,
-      "options": null,
-    },
-  ],
-  "options": Object {
-    "actionSequence": Array [
-      "render",
-      "bindEvents",
-    ],
-    "placeholder": "",
-    "renderAsync": false,
-    "renderDependence": Array [],
-    "tabindex": 1,
-    "types": Array [],
-  },
-}
-`;
-
-exports[`renders correctly 2`] = `
-Object {
-  "ID": "widget",
   "__data__": Object {
     "actionSequence": Array [
       "render",
@@ -97,10 +69,12 @@ Object {
       "render",
       "bindEvents",
     ],
-    "placeholder": "",
+    "id": "expression-input",
+    "name": "expression",
+    "placeholder": "a && b",
     "renderAsync": false,
     "renderDependence": Array [],
-    "tabindex": 1,
+    "tabindex": 2,
     "types": Array [],
   },
 }

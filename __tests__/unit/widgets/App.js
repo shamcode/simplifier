@@ -7,10 +7,7 @@ it( 'renders correctly', () => {
 
     const meta = renderer( App, {
         result: 'a || b',
-        onSubmit: fn,
-        afterRender() {
-            this.update();
-        }
+        onSubmit: fn
     } );
 
     meta.widget.container.querySelector( 'input' ).value = 'a && b';
