@@ -2,52 +2,34 @@
 
 exports[`renders correctly 1`] = `
 Object {
-  "ID": "widget",
-  "__data__": Object {
-    "actionSequence": Array [
-      "render",
-      "bindEvents",
-    ],
-    "onSubmit": [Function],
-    "renderAsync": false,
-    "renderDependence": Array [],
+  "Constructor": "App",
+  "Options": Object {
+    "ID": "widget",
+    "containerSelector": "body",
+    "directives": Object {
+      "onsubmit": [Function],
+      "ref": [Function],
+    },
     "result": "a || b",
     "types": Array [],
   },
-  "html": "<header><h1>Logic expressions simplifier</h1></header><!--Header--><main><form><input placeholder=\\"(a &amp;&amp; b) || (!a &amp;&amp; !b)\\" tabindex=\\"1\\" id=\\"input-text\\" name=\\"expresion\\"><!--Input--><button type=\\"submit\\" tabindex=\\"2\\">Simplify!</button></form><!--Form--><div id=\\"result\\">a || b</div><!--DisplayResult--></main><footer></footer><!--Footer-->",
-  "nodes": Array [
-    Object {
-      "ID": undefined,
-      "__data__": null,
-      "html": null,
-      "nodes": null,
-      "options": null,
-    },
-    Object {
-      "ID": undefined,
-      "__data__": null,
-      "html": null,
-      "nodes": null,
-      "options": null,
-    },
-    Object {
-      "ID": undefined,
-      "__data__": null,
-      "html": null,
-      "nodes": null,
-      "options": null,
-    },
-  ],
-  "options": Object {
-    "actionSequence": Array [
-      "render",
-      "bindEvents",
-    ],
-    "onSubmit": [Function],
-    "renderAsync": false,
-    "renderDependence": Array [],
-    "result": "a || b",
-    "types": Array [],
-  },
+  "html": "
+<header>
+  <h1>Logic expressions simplifier</h1>
+</header>
+<!--Header-->
+<main>
+  <form>
+    <input placeholder=\\"(a &amp;&amp; b) || (!a &amp;&amp; !b)\\" tabindex=\\"1\\" id=\\"input-text\\" name=\\"expression\\">
+    <!--Input-->
+    <button type=\\"submit\\" tabindex=\\"2\\">Simplify!</button>
+  </form>
+  <!--Form-->
+  <div id=\\"result\\">a || b</div>
+  <!--DisplayResult-->
+</main>
+<footer></footer>
+<!--Footer-->
+",
 }
 `;

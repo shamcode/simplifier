@@ -2,34 +2,12 @@
 
 exports[`renders correctly 1`] = `
 Object {
-  "ID": "widget",
-  "__data__": Object {
-    "actionSequence": Array [
-      "render",
-      "bindEvents",
-    ],
-    "renderAsync": false,
-    "renderDependence": Array [],
+  "Constructor": "Footer",
+  "Options": Object {
+    "ID": "widget",
+    "containerSelector": "body",
     "types": Array [],
   },
   "html": "<footer></footer>",
-  "nodes": Array [
-    Object {
-      "ID": undefined,
-      "__data__": null,
-      "html": null,
-      "nodes": null,
-      "options": null,
-    },
-  ],
-  "options": Object {
-    "actionSequence": Array [
-      "render",
-      "bindEvents",
-    ],
-    "renderAsync": false,
-    "renderDependence": Array [],
-    "types": Array [],
-  },
 }
 `;

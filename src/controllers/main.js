@@ -1,9 +1,15 @@
-import { DI } from 'sham-ui';
 import simplify from 'logic-expression-simplify';
+import { ref, onsubmit } from 'sham-ui-directives';
 import App from '../widgets/App.sht';
 
 export default function() {
-    const app = new App( 'body', 'app', {
+    new App( {
+        ID: 'app',
+        containerSelector: 'body',
+        directives: {
+            ref,
+            onsubmit
+        },
         result: '',
         onSubmit( evt, { expression } ) {
             evt.preventDefault();
@@ -11,7 +17,7 @@ export default function() {
             let simplifiedExpression;
             try {
                 simplifiedExpression = simplify( expression );
-            } catch (e) {
+            } catch ( e ) {
                 simplifiedExpression = '';
             }
 
@@ -22,6 +28,4 @@ export default function() {
             return false;
         }
     } );
-
-    DI.bind( 'widgets:app', app );
-};
+}

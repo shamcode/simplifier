@@ -2,34 +2,16 @@
 
 exports[`renders correctly 1`] = `
 Object {
-  "ID": "widget",
-  "__data__": Object {
-    "actionSequence": Array [
-      "render",
-      "bindEvents",
-    ],
-    "renderAsync": false,
-    "renderDependence": Array [],
+  "Constructor": "Header",
+  "Options": Object {
+    "ID": "widget",
+    "containerSelector": "body",
     "types": Array [],
   },
-  "html": "<header><h1>Logic expressions simplifier</h1></header>",
-  "nodes": Array [
-    Object {
-      "ID": undefined,
-      "__data__": null,
-      "html": null,
-      "nodes": null,
-      "options": null,
-    },
-  ],
-  "options": Object {
-    "actionSequence": Array [
-      "render",
-      "bindEvents",
-    ],
-    "renderAsync": false,
-    "renderDependence": Array [],
-    "types": Array [],
-  },
+  "html": "
+<header>
+  <h1>Logic expressions simplifier</h1>
+</header>
+",
 }
 `;

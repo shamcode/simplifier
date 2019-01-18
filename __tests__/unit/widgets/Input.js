@@ -17,6 +17,3 @@ it( 'with props', () => {
     } );
     expect( meta.toJSON() ).toMatchSnapshot();
 } );
-
-
-

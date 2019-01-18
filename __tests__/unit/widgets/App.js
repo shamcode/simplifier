@@ -1,4 +1,5 @@
 import App from '../../../src/widgets/App.sht';
+import { ref, onsubmit } from 'sham-ui-directives';
 import renderer from 'sham-ui-test-helpers';
 
 it( 'renders correctly', () => {
@@ -6,14 +7,20 @@ it( 'renders correctly', () => {
     const fn = jest.fn();
 
     const meta = renderer( App, {
+        directives: {
+            ref,
+            onsubmit
+        },
         result: 'a || b',
         onSubmit: fn
     } );
 
     meta.widget.container.querySelector( 'input' ).value = 'a && b';
-    meta.widget.container.querySelector( '[type="submit"]' ).click();
+    meta.widget.container.querySelector( 'form' ).dispatchEvent( new Event( 'submit' ) );
 
-    expect( meta.toJSON() ).toMatchSnapshot();
-    expect( fn.mock.calls.length ).toBe( 1 );
+    const json = meta.toJSON();
+    delete json.Options.onSubmit;
+    expect( json ).toMatchSnapshot();
+    expect( fn.mock.calls ).toHaveLength( 1 );
     expect( fn.mock.calls[ 0 ][ 1 ] ).toEqual( { expression: 'a && b' } );
 } );

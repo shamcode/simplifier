@@ -1,32 +1,13 @@
 import { options } from 'sham-ui';
-import Form from './Form.sht';
+import FormTemplate from './Form.sht';
 
-export default class extends Form {
-    @options
-    onSubmit() {}
-
-    get formNode() {
-        return this.querySelector( 'form' );
-    }
-
-    get inputNode() {
-        return this.querySelector( 'input' );
-    }
-
-    bindEvents() {
-        this.formNode.addEventListener(
-            'submit',
-            this._onSubmit.bind( this )
-        );
-    }
-
-    destroy() {
-        this.formNode.removeEventListener( 'submit' );
-    }
+export default class Form extends FormTemplate {
+    @options onSubmit() {}
 
     _onSubmit( evt ) {
-        this.__data__.onSubmit( evt, {
-            expression: this.inputNode.value
+        const data = new FormData( this.formNode );
+        this.options.onSubmit( evt, {
+            expression: data.get( 'expression' )
         } );
     }
 }

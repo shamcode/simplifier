@@ -5,6 +5,5 @@ node_modules
 .idea
 Thumbs.db
 
-/test/assets
 /dist/
 /coverage/

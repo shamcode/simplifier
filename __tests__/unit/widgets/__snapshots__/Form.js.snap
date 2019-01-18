@@ -2,108 +2,67 @@
 
 exports[`onSubmit options 1`] = `
 Object {
-  "ID": "widget",
-  "__data__": Object {
-    "actionSequence": Array [
-      "render",
-      "bindEvents",
-    ],
-    "onSubmit": [Function],
-    "renderAsync": false,
-    "renderDependence": Array [],
-    "types": Array [],
-  },
-  "html": "<form><input placeholder=\\"(a &amp;&amp; b) || (!a &amp;&amp; !b)\\" tabindex=\\"1\\" id=\\"input-text\\" name=\\"expresion\\"><!--Input--><button type=\\"submit\\" tabindex=\\"2\\">Simplify!</button></form>",
-  "nodes": Array [
-    Object {
-      "ID": undefined,
-      "__data__": null,
-      "html": null,
-      "nodes": null,
-      "options": null,
+  "Constructor": "Form",
+  "Options": Object {
+    "ID": "widget",
+    "containerSelector": "body",
+    "directives": Object {
+      "onsubmit": [Function],
+      "ref": [Function],
     },
-  ],
-  "options": Object {
-    "actionSequence": Array [
-      "render",
-      "bindEvents",
-    ],
-    "onSubmit": [Function],
-    "renderAsync": false,
-    "renderDependence": Array [],
     "types": Array [],
   },
+  "html": "
+<form>
+  <input placeholder=\\"(a &amp;&amp; b) || (!a &amp;&amp; !b)\\" tabindex=\\"1\\" id=\\"input-text\\" name=\\"expression\\">
+  <!--Input-->
+  <button type=\\"submit\\" tabindex=\\"2\\">Simplify!</button>
+</form>
+",
 }
 `;
 
 exports[`onSubmit props 1`] = `
 Object {
-  "ID": "widget",
-  "__data__": Object {
-    "actionSequence": Array [
-      "render",
-      "bindEvents",
-    ],
-    "onSubmit": [Function],
-    "renderAsync": false,
-    "renderDependence": Array [],
-    "types": Array [],
-  },
-  "html": "<form><input placeholder=\\"(a &amp;&amp; b) || (!a &amp;&amp; !b)\\" tabindex=\\"1\\" id=\\"input-text\\" name=\\"expresion\\"><!--Input--><button type=\\"submit\\" tabindex=\\"2\\">Simplify!</button></form>",
-  "nodes": Array [
-    Object {
-      "ID": undefined,
-      "__data__": null,
-      "html": null,
-      "nodes": null,
-      "options": null,
+  "Constructor": "Form",
+  "Options": Object {
+    "ID": "widget",
+    "containerSelector": "body",
+    "directives": Object {
+      "onsubmit": [Function],
+      "ref": [Function],
     },
-  ],
-  "options": Object {
-    "actionSequence": Array [
-      "render",
-      "bindEvents",
-    ],
-    "onSubmit": [Function],
-    "renderAsync": false,
-    "renderDependence": Array [],
     "types": Array [],
   },
+  "html": "
+<form>
+  <input placeholder=\\"(a &amp;&amp; b) || (!a &amp;&amp; !b)\\" tabindex=\\"1\\" id=\\"input-text\\" name=\\"expression\\">
+  <!--Input-->
+  <button type=\\"submit\\" tabindex=\\"2\\">Simplify!</button>
+</form>
+",
 }
 `;
 
 exports[`renders correctly 1`] = `
 Object {
-  "ID": "widget",
-  "__data__": Object {
-    "actionSequence": Array [
-      "render",
-      "bindEvents",
-    ],
-    "onSubmit": [Function],
-    "renderAsync": false,
-    "renderDependence": Array [],
-    "types": Array [],
-  },
-  "html": "<form><input placeholder=\\"(a &amp;&amp; b) || (!a &amp;&amp; !b)\\" tabindex=\\"1\\" id=\\"input-text\\" name=\\"expresion\\"><!--Input--><button type=\\"submit\\" tabindex=\\"2\\">Simplify!</button></form>",
-  "nodes": Array [
-    Object {
-      "ID": undefined,
-      "__data__": null,
-      "html": null,
-      "nodes": null,
-      "options": null,
+  "Constructor": "Form",
+  "Options": Object {
+    "ID": "widget",
+    "containerSelector": "body",
+    "directives": Object {
+      "onsubmit": [Function],
+      "ref": [Function],
     },
-  ],
-  "options": Object {
-    "actionSequence": Array [
-      "render",
-      "bindEvents",
-    ],
     "onSubmit": [Function],
-    "renderAsync": false,
-    "renderDependence": Array [],
     "types": Array [],
   },
+  "html": "
+<form>
+  <input placeholder=\\"(a &amp;&amp; b) || (!a &amp;&amp; !b)\\" tabindex=\\"1\\" id=\\"input-text\\" name=\\"expression\\">
+  <!--Input-->
+  <button type=\\"submit\\" tabindex=\\"2\\">Simplify!</button>
+</form>
+",
 }
 `;

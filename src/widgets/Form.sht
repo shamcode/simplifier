@@ -1,11 +1,14 @@
 {% import Input from './Input' %}
 
-<form>
+<form
+        :onsubmit={{this._onSubmit.bind( this )}}
+        :ref="formNode"
+>
     <Input
             id="input-text"
             tabindex="1"
             placeholder="(a && b) || (!a && !b)"
-            name="expresion"
+            name="expression"
     />
     <button type="submit" tabindex="2">Simplify!</button>
 </form>

@@ -1,14 +1,7 @@
 import { options } from 'sham-ui';
-import Input from './Input.sht';
+import InputTemplate from './Input.sht';
 
-export default class extends Input {
-    @options
-    get placeholder() {
-        return '';
-    }
-
-    @options
-    get tabindex() {
-        return 1;
-    }
+export default class Input extends InputTemplate {
+    @options placeholder = '';
+    @options tabindex = 1;
 }
