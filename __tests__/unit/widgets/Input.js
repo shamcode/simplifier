@@ -1,4 +1,4 @@
-import Input from '../../../src/widgets/Input';
+import Input from '../../../src/widgets/Input.sfw';
 import renderer from 'sham-ui-test-helpers';
 
 it( 'renders correctly', () => {

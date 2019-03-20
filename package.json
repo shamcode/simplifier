@@ -1,6 +1,6 @@
 {
   "name": "simplifier",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "repository": "https://github.com/shamcode/",
   "license": "MIT",
   "scripts": {
@@ -30,11 +30,11 @@
     "jest-runner-eslint": "^0.6.0",
     "node-sass": "^4.9.3",
     "sass-loader": "~7.1.0",
-    "sham-ui-directives": "^2.0.2",
-    "sham-ui-jest-preprocessor": "^2.0.7",
-    "sham-ui-templates": "^2.0.7",
-    "sham-ui-templates-loader": "^2.0.5",
-    "sham-ui-test-helpers": "^2.0.4",
+    "sham-ui-directives": "^2.0.3",
+    "sham-ui-jest-preprocessor": "^2.0.9",
+    "sham-ui-templates": "^2.1.0",
+    "sham-ui-templates-loader": "^2.0.7",
+    "sham-ui-test-helpers": "^2.0.5",
     "style-loader": "~0.22.1",
     "webpack": "~4.11.1",
     "webpack-cli": "^3.1.0",
@@ -66,8 +66,10 @@
     "projects": [
       {
         "displayName": "test",
+        "moduleFileExtensions": [ "js", "json", "sfw" ],
         "transform": {
           "^.+\\.sht$": "sham-ui-jest-preprocessor",
+          "^.+\\.sfw$": "sham-ui-jest-preprocessor",
           "^.+\\.js$": "babel-jest"
         },
         "collectCoverageFrom": [

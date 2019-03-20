@@ -1,0 +1,17 @@
+<template>
+    <input
+            id={{id}}
+            placeholder={{placeholder}}
+            tabindex="{{tabindex}}"
+            name={{name}}
+    />
+</template>
+
+<script>
+    import { options } from 'sham-ui';
+
+    export default class Input extends Template {
+        @options placeholder = '';
+        @options tabindex = 1;
+    }
+</script>

@@ -1,6 +1,0 @@
-<input
-        id={{id}}
-        placeholder={{placeholder}}
-        tabindex="{{tabindex}}"
-        name={{name}}
-/>

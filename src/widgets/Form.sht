@@ -1,4 +1,4 @@
-{% import Input from './Input' %}
+{% import Input from './Input.sfw' %}
 
 <form
         :onsubmit={{this._onSubmit.bind( this )}}
