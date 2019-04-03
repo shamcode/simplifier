@@ -1,4 +1,4 @@
-import Form from '../../../src/widgets/Form';
+import Form from '../../../src/widgets/Form.sfw';
 import { ref, onsubmit } from 'sham-ui-directives';
 import renderer from 'sham-ui-test-helpers';
 

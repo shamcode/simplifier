@@ -1,6 +1,6 @@
 {% import Header from './Header.sht' %}
 {% import Footer from './Footer.sht' %}
-{% import Form from './Form' %}
+{% import Form from './Form.sfw' %}
 {% import DisplayResult from './DisplayResult.sht' %}
 
 <Header/>

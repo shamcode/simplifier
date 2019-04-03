@@ -1,0 +1,34 @@
+<template>
+    {% import Input from './Input.sfw' %}
+
+    <form
+        :onsubmit={{this._onSubmit.bind( this )}}
+        :ref="formNode"
+    >
+        <Input
+            id="input-text"
+            tabindex="1"
+            placeholder="(a && b) || (!a && !b)"
+            name="expression"
+        />
+        <button type="submit" tabindex="2">Simplify!</button>
+    </form>
+</template>
+
+<script>
+    import { options } from 'sham-ui';
+
+    /**
+     * @property {Element} formNode
+     */
+    export default class Form extends Template {
+        @options onSubmit() {}
+
+        _onSubmit( evt ) {
+            const data = new FormData( this.formNode );
+            this.options.onSubmit( evt, {
+                expression: data.get( 'expression' )
+            } );
+        }
+    }
+</script>

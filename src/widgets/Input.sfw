@@ -1,9 +1,9 @@
 <template>
     <input
-            id={{id}}
-            placeholder={{placeholder}}
-            tabindex="{{tabindex}}"
-            name={{name}}
+        id={{id}}
+        placeholder={{placeholder}}
+        tabindex="{{tabindex}}"
+        name={{name}}
     />
 </template>
 
