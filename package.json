@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "logic-expression-simplify": "0.0.2",
-    "sham-ui": "^2.0.5"
+    "sham-ui": "^3.1.0"
   },
   "babel": {
     "presets": [

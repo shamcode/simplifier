@@ -6281,6 +6281,14 @@ sham-ui@2.0.5, sham-ui@^2.0.5:
     "@babel/runtime" "^7.1.2"
     nanoid "^1.3.1"
 
+sham-ui@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/sham-ui/-/sham-ui-3.1.0.tgz#bcdd1d53a19748805d8b83245809a04ddc6913a8"
+  integrity sha512-JDdJrFD3lnElp5GcuDovZEW+P08rZl9RbZQXV5jAfnVE9E6GtZvxFNt1T16NNhoCU6yYv5iTP3sw+ikJqEspgA==
+  dependencies:
+    "@babel/runtime" "^7.1.2"
+    nanoid "^1.3.1"
+
 shebang-command@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/shebang-command/-/shebang-command-1.2.0.tgz#44aac65b695b03398968c39f363fee5deafdf1ea"
