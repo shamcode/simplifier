@@ -616,6 +616,11 @@ babel-core@^6.0.0, babel-core@^6.26.0, babel-core@^6.26.3:
     slash "^1.0.0"
     source-map "^0.5.7"
 
+babel-core@^7.0.0-bridge.0:
+  version "7.0.0-bridge.0"
+  resolved "https://registry.yarnpkg.com/babel-core/-/babel-core-7.0.0-bridge.0.tgz#95a492ddd90f9b4e9a4a1da14eb335b87b634ece"
+  integrity sha512-poPX9mZH/5CSanm50Q+1toVci6pv5KSRv/5TWCwtzQS5XEwn40BcCrgIeMFWP9CKKIniKXNxoIOnOq4VVlGXhg==
+
 babel-eslint@^8.2.6:
   version "8.2.6"
   resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-8.2.6.tgz#6270d0c73205628067c0f7ae1693a9e797acefd9"
@@ -6264,19 +6269,29 @@ sham-ui-templates@2.1.1, sham-ui-templates@^2.1.1:
     sham-ui "2.0.5"
     source-map "^0.5.6"
 
-sham-ui-test-helpers@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/sham-ui-test-helpers/-/sham-ui-test-helpers-2.0.6.tgz#6cd64a97bed71909c50181d307a0c68526430daa"
-  integrity sha512-NJky+83mbEqKGSB2Gq7hhvW561NwoRMLOA840JnErXBokLq+WPoD4+TvdLrIJJHp2X13l69fn7rAsl+ZPRRnfA==
+sham-ui-test-helpers@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/sham-ui-test-helpers/-/sham-ui-test-helpers-3.0.0.tgz#89f82f36a12c73ae4410625fc4e062fe810617a1"
+  integrity sha512-Nv70S4WvYrFFPBkzYuPVJnK6LTj6J5M41DcWRA9xDIAnrtQwysylH0Ns19WCCJ6p6EdNv57kEr/dZYBk0tQePg==
   dependencies:
+    babel-core "^7.0.0-bridge.0"
+    babel-jest "^23.4.2"
     jest "^23.5.0"
     pretty "^2.0.0"
-    sham-ui "^2.0.5"
+    sham-ui "^3.1.0"
 
 sham-ui@2.0.5, sham-ui@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/sham-ui/-/sham-ui-2.0.5.tgz#bde5b09b00951a8a018809799fcfdc48fb5b0716"
   integrity sha512-ASN2xAnZ0l7yD7F4xzvAt0U1LENs0Y95++GJP4z6+f9VcRmIIAppV09MerWO1tVPD1a1dPtoERB+Qxi7agerpQ==
+  dependencies:
+    "@babel/runtime" "^7.1.2"
+    nanoid "^1.3.1"
+
+sham-ui@^3.1.0:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/sham-ui/-/sham-ui-3.1.1.tgz#94af0a4604d3939b69a0283286bdac111c7ce79a"
+  integrity sha512-esFR5+wLSLhPGl7udNk/Xh3TL/au/IDYevfmTUSWbWdjY3OmOBYllVS7IeJkG2GMP9XUfwqWj684n2KkABmArQ==
   dependencies:
     "@babel/runtime" "^7.1.2"
     nanoid "^1.3.1"
