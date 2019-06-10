@@ -6231,10 +6231,10 @@ shallow-clone@^1.0.0:
     kind-of "^5.0.0"
     mixin-object "^2.0.1"
 
-sham-ui-directives@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/sham-ui-directives/-/sham-ui-directives-2.0.3.tgz#53d1223db003f3e260db5300162a5247f04fc710"
-  integrity sha512-uECWDo7kTG1FJgmHsjFZqCsUPzzNZITD+cRS/nMejklkuctxTh1+xe9aavEhqpM+4/3GLj1LXx2UXUDMTS2auw==
+sham-ui-directives@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/sham-ui-directives/-/sham-ui-directives-2.0.4.tgz#221c255912060420a1e21542f4b2ac06ff59cf26"
+  integrity sha512-ZN76LtvwBUDIogdA32fwnwQCnyiL+JU0zd0Dk6aYMh697GTfvNUO4tf6ClBEkWBQDVR+1Tw+WHLUWmRhtrjmGw==
   dependencies:
     sham-ui "^2.0.5"
 
