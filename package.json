@@ -30,7 +30,7 @@
     "jest-runner-eslint": "^0.6.0",
     "node-sass": "^4.9.3",
     "sass-loader": "~7.1.0",
-    "sham-ui-directives": "^2.0.3",
+    "sham-ui-directives": "^3.0.1",
     "sham-ui-jest-preprocessor": "^2.0.10",
     "sham-ui-templates": "^2.1.1",
     "sham-ui-templates-loader": "^2.0.8",
