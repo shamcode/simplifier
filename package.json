@@ -33,7 +33,7 @@
     "sham-ui-directives": "^2.0.3",
     "sham-ui-jest-preprocessor": "^2.0.10",
     "sham-ui-templates": "^2.1.1",
-    "sham-ui-templates-loader": "^2.0.8",
+    "sham-ui-templates-loader": "^3.0.4",
     "sham-ui-test-helpers": "^2.0.6",
     "style-loader": "~0.22.1",
     "webpack": "~4.11.1",
