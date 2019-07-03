@@ -1,5 +1,9 @@
 ## 0.1.3
 * Update deps
+* Refactoring for `sham-ui@3.0.0`
+
+## 0.1.3
+* Update deps
 * Rewrite with SFW
 
 ## 0.1.2

@@ -1,8 +1,8 @@
 <template>
-    {% import Input from './Input.sfw' %}
+    {% import Input from './Input.sfc' %}
 
     <form
-        :onsubmit={{this._onSubmit.bind( this )}}
+        :onsubmit={{::this._onSubmit}}
         :ref="formNode"
     >
         <Input

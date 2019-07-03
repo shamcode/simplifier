@@ -4,7 +4,7 @@ exports[`renders correctly 1`] = `
 Object {
   "Constructor": "Footer",
   "Options": Object {
-    "ID": "widget",
+    "ID": "component",
     "containerSelector": "body",
     "types": Array [],
   },

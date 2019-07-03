@@ -1,6 +1,6 @@
 import simplify from 'logic-expression-simplify';
 import { ref, onsubmit } from 'sham-ui-directives';
-import App from '../widgets/App.sht';
+import App from '../components/App.sht';
 
 export default function() {
     new App( {

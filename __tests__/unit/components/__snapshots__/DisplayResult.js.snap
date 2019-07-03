@@ -2,16 +2,13 @@
 
 exports[`renders correctly 1`] = `
 Object {
-  "Constructor": "Header",
+  "Constructor": "DisplayResult",
   "Options": Object {
-    "ID": "widget",
+    "ID": "component",
     "containerSelector": "body",
+    "result": "a && b",
     "types": Array [],
   },
-  "html": "
-<header>
-  <h1>Logic expressions simplifier</h1>
-</header>
-",
+  "html": "<div id=\\"result\\">a &amp;&amp; b</div>",
 }
 `;

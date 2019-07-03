@@ -1,4 +1,4 @@
-import App from '../../../src/widgets/App.sht';
+import App from '../../../src/components/App.sht';
 import { ref, onsubmit } from 'sham-ui-directives';
 import renderer from 'sham-ui-test-helpers';
 
@@ -15,8 +15,8 @@ it( 'renders correctly', () => {
         onSubmit: fn
     } );
 
-    meta.widget.container.querySelector( 'input' ).value = 'a && b';
-    meta.widget.container.querySelector( 'form' ).dispatchEvent( new Event( 'submit' ) );
+    meta.component.container.querySelector( 'input' ).value = 'a && b';
+    meta.component.container.querySelector( 'form' ).dispatchEvent( new Event( 'submit' ) );
 
     const json = meta.toJSON();
     delete json.Options.onSubmit;

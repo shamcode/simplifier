@@ -4,7 +4,7 @@ exports[`renders correctly 1`] = `
 Object {
   "Constructor": "Input",
   "Options": Object {
-    "ID": "widget",
+    "ID": "component",
     "containerSelector": "body",
     "placeholder": "",
     "tabindex": 1,
@@ -18,7 +18,7 @@ exports[`with props 1`] = `
 Object {
   "Constructor": "Input",
   "Options": Object {
-    "ID": "widget",
+    "ID": "component",
     "containerSelector": "body",
     "id": "expression-input",
     "name": "expression",

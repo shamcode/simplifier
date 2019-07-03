@@ -1,4 +1,4 @@
-import Form from '../../../src/widgets/Form.sfw';
+import Form from '../../../src/components/Form.sfc';
 import { ref, onsubmit } from 'sham-ui-directives';
 import renderer from 'sham-ui-test-helpers';
 
@@ -24,14 +24,14 @@ it( 'onSubmit options', () => {
         onSubmit: fn
     } );
 
-    meta.widget.update();
-    meta.widget.querySelector( 'input' ).value = 'a && b';
-    meta.widget.querySelector( 'form' ).dispatchEvent( new Event( 'submit' ) );
+    meta.component.update();
+    meta.component.querySelector( 'input' ).value = 'a && b';
+    meta.component.querySelector( 'form' ).dispatchEvent( new Event( 'submit' ) );
 
     const json = meta.toJSON();
     delete json.Options.onSubmit;
     expect( json ).toMatchSnapshot();
-    expect( fn.mock.calls.length ).toBe( 1 );
+    expect( fn.mock.calls ).toHaveLength( 1 );
     expect( fn.mock.calls[ 0 ][ 1 ] ).toEqual( { expression: 'a && b' } );
 } );
 
@@ -47,15 +47,15 @@ it( 'onSubmit props', () => {
         }
     } );
 
-    meta.widget.update( {
+    meta.component.update( {
         onSubmit: fn
     } );
-    meta.widget.querySelector( 'input' ).value = 'a && b';
-    meta.widget.querySelector( 'form' ).dispatchEvent( new Event( 'submit' ) );
+    meta.component.querySelector( 'input' ).value = 'a && b';
+    meta.component.querySelector( 'form' ).dispatchEvent( new Event( 'submit' ) );
 
     const json = meta.toJSON();
     delete json.Options.onSubmit;
     expect( json ).toMatchSnapshot();
-    expect( fn.mock.calls.length ).toBe( 1 );
+    expect( fn.mock.calls ).toHaveLength( 1 );
     expect( fn.mock.calls[ 0 ][ 1 ] ).toEqual( { expression: 'a && b' } );
 } );

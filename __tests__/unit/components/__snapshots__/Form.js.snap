@@ -4,7 +4,7 @@ exports[`onSubmit options 1`] = `
 Object {
   "Constructor": "Form",
   "Options": Object {
-    "ID": "widget",
+    "ID": "component",
     "containerSelector": "body",
     "directives": Object {
       "onsubmit": [Function],
@@ -14,7 +14,7 @@ Object {
   },
   "html": "
 <form>
-  <input placeholder=\\"(a &amp;&amp; b) || (!a &amp;&amp; !b)\\" tabindex=\\"1\\" id=\\"input-text\\" name=\\"expression\\">
+  <input id=\\"input-text\\" placeholder=\\"(a &amp;&amp; b) || (!a &amp;&amp; !b)\\" tabindex=\\"1\\" name=\\"expression\\">
   <!--Input-->
   <button type=\\"submit\\" tabindex=\\"2\\">Simplify!</button>
 </form>
@@ -26,7 +26,7 @@ exports[`onSubmit props 1`] = `
 Object {
   "Constructor": "Form",
   "Options": Object {
-    "ID": "widget",
+    "ID": "component",
     "containerSelector": "body",
     "directives": Object {
       "onsubmit": [Function],
@@ -36,7 +36,7 @@ Object {
   },
   "html": "
 <form>
-  <input placeholder=\\"(a &amp;&amp; b) || (!a &amp;&amp; !b)\\" tabindex=\\"1\\" id=\\"input-text\\" name=\\"expression\\">
+  <input id=\\"input-text\\" placeholder=\\"(a &amp;&amp; b) || (!a &amp;&amp; !b)\\" tabindex=\\"1\\" name=\\"expression\\">
   <!--Input-->
   <button type=\\"submit\\" tabindex=\\"2\\">Simplify!</button>
 </form>
@@ -48,7 +48,7 @@ exports[`renders correctly 1`] = `
 Object {
   "Constructor": "Form",
   "Options": Object {
-    "ID": "widget",
+    "ID": "component",
     "containerSelector": "body",
     "directives": Object {
       "onsubmit": [Function],
@@ -59,7 +59,7 @@ Object {
   },
   "html": "
 <form>
-  <input placeholder=\\"(a &amp;&amp; b) || (!a &amp;&amp; !b)\\" tabindex=\\"1\\" id=\\"input-text\\" name=\\"expression\\">
+  <input id=\\"input-text\\" placeholder=\\"(a &amp;&amp; b) || (!a &amp;&amp; !b)\\" tabindex=\\"1\\" name=\\"expression\\">
   <!--Input-->
   <button type=\\"submit\\" tabindex=\\"2\\">Simplify!</button>
 </form>
