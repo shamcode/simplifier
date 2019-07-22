@@ -3044,10 +3044,10 @@ eslint-plugin-html@^5.0.5:
   dependencies:
     htmlparser2 "^3.10.0"
 
-eslint-plugin-jest@^21.21.0:
-  version "21.27.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-21.27.2.tgz#2a795b7c3b5e707df48a953d651042bd01d7b0a8"
-  integrity sha512-0E4OIgBJVlAmf1KfYFtZ3gYxgUzC5Eb3Jzmrc9ikI1OY+/cM8Kh72Ti7KfpeHNeD3HJNf9SmEfmvQLIz44Hrhw==
+eslint-plugin-jest@^22.13.0:
+  version "22.13.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-22.13.0.tgz#d7d134c6e3c2f67cc50f5fa89a329db579d28428"
+  integrity sha512-bIr8LL7buUXS8Pk69SFgaDKgyvPQkDu6i8ko0lP54uccszlo4EOwtstDXOZl5Af3JwudbECxRUbCpL/2cKDkkg==
 
 eslint-scope@3.7.1:
   version "3.7.1"
