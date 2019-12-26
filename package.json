@@ -41,7 +41,7 @@
     "sham-ui-templates": "^3.2.5",
     "sham-ui-templates-loader": "^3.0.4",
     "sham-ui-test-helpers": "^3.1.4",
-    "style-loader": "~0.22.1",
+    "style-loader": "~1.1.2",
     "stylelint": "^10.1.0",
     "stylelint-config-recommended-scss": "^3.3.0",
     "stylelint-scss": "^3.8.0",
