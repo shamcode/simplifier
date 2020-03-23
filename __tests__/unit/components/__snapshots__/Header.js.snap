@@ -5,8 +5,6 @@ Object {
   "Constructor": "Header",
   "Options": Object {
     "ID": "component",
-    "containerSelector": "body",
-    "types": Array [],
   },
   "html": "
 <header>

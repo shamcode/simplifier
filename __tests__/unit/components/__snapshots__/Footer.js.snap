@@ -5,8 +5,6 @@ Object {
   "Constructor": "Footer",
   "Options": Object {
     "ID": "component",
-    "containerSelector": "body",
-    "types": Array [],
   },
   "html": "<footer></footer>",
 }

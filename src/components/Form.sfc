@@ -16,12 +16,13 @@
 </template>
 
 <script>
-    import { options } from 'sham-ui';
+    import { mergeWithTemplate, options } from 'sham-ui-macro/babel.macro';
 
     /**
      * @property {Element} formNode
      */
-    export default class Form extends Template {
+    @mergeWithTemplate
+    class Form extends Template {
         @options onSubmit() {}
 
         _onSubmit( evt ) {
@@ -31,4 +32,6 @@
             } );
         }
     }
+
+    export default Form;
 </script>

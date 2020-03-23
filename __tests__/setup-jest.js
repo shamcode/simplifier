@@ -5,3 +5,8 @@ Object.defineProperty( global.self, 'crypto', {
         getRandomValues: arr => crypto.randomBytes( arr.length )
     }
 } );
+
+Object.defineProperty( window, 'PRODUCTION', {
+    value: true,
+    configurable: true
+} );

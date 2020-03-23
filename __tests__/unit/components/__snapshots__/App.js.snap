@@ -5,13 +5,11 @@ Object {
   "Constructor": "App",
   "Options": Object {
     "ID": "component",
-    "containerSelector": "body",
     "directives": Object {
       "onsubmit": [Function],
       "ref": [Function],
     },
     "result": "a || b",
-    "types": Array [],
   },
   "html": "
 <header>

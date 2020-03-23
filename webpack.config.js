@@ -85,11 +85,11 @@ module.exports = ( env, argv ) => {
             new OptimizeCssAssetsPlugin( {
                 cssProcessor: require( 'cssnano' ),
                 cssProcessorPluginOptions: {
-                    preset: [ 'default', { discardComments: { removeAll: true } } ],
+                    preset: [ 'default', { discardComments: { removeAll: true } } ]
                 },
                 canPrint: true
             } )
-        )
+        );
     }
     config.mode = argv.mode;
     return config;

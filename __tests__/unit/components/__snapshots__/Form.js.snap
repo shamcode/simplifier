@@ -5,12 +5,10 @@ Object {
   "Constructor": "Form",
   "Options": Object {
     "ID": "component",
-    "containerSelector": "body",
     "directives": Object {
       "onsubmit": [Function],
       "ref": [Function],
     },
-    "types": Array [],
   },
   "html": "
 <form>
@@ -27,12 +25,10 @@ Object {
   "Constructor": "Form",
   "Options": Object {
     "ID": "component",
-    "containerSelector": "body",
     "directives": Object {
       "onsubmit": [Function],
       "ref": [Function],
     },
-    "types": Array [],
   },
   "html": "
 <form>
@@ -49,13 +45,11 @@ Object {
   "Constructor": "Form",
   "Options": Object {
     "ID": "component",
-    "containerSelector": "body",
     "directives": Object {
       "onsubmit": [Function],
       "ref": [Function],
     },
     "onSubmit": [Function],
-    "types": Array [],
   },
   "html": "
 <form>

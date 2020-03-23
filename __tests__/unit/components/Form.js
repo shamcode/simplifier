@@ -25,8 +25,8 @@ it( 'onSubmit options', () => {
     } );
 
     meta.component.update();
-    meta.component.querySelector( 'input' ).value = 'a && b';
-    meta.component.querySelector( 'form' ).dispatchEvent( new Event( 'submit' ) );
+    meta.component.container.querySelector( 'input' ).value = 'a && b';
+    meta.component.container.querySelector( 'form' ).dispatchEvent( new Event( 'submit' ) );
 
     const json = meta.toJSON();
     delete json.Options.onSubmit;
@@ -50,8 +50,8 @@ it( 'onSubmit props', () => {
     meta.component.update( {
         onSubmit: fn
     } );
-    meta.component.querySelector( 'input' ).value = 'a && b';
-    meta.component.querySelector( 'form' ).dispatchEvent( new Event( 'submit' ) );
+    meta.component.container.querySelector( 'input' ).value = 'a && b';
+    meta.component.container.querySelector( 'form' ).dispatchEvent( new Event( 'submit' ) );
 
     const json = meta.toJSON();
     delete json.Options.onSubmit;

@@ -8,10 +8,13 @@
 </template>
 
 <script>
-    import { options } from 'sham-ui';
+    import { mergeWithTemplate, options } from 'sham-ui-macro/babel.macro';
 
-    export default class Input extends Template {
+    @mergeWithTemplate
+    class Input extends Template {
         @options placeholder = '';
         @options tabindex = 1;
     }
+
+    export default Input;
 </script>

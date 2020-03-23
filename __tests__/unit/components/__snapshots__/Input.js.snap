@@ -5,10 +5,8 @@ Object {
   "Constructor": "Input",
   "Options": Object {
     "ID": "component",
-    "containerSelector": "body",
     "placeholder": "",
     "tabindex": 1,
-    "types": Array [],
   },
   "html": "<input placeholder=\\"\\" tabindex=\\"1\\">",
 }
@@ -19,12 +17,10 @@ Object {
   "Constructor": "Input",
   "Options": Object {
     "ID": "component",
-    "containerSelector": "body",
     "id": "expression-input",
     "name": "expression",
     "placeholder": "a && b",
     "tabindex": 2,
-    "types": Array [],
   },
   "html": "<input id=\\"expression-input\\" placeholder=\\"a &amp;&amp; b\\" tabindex=\\"2\\" name=\\"expression\\">",
 }

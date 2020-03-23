@@ -5,9 +5,7 @@ Object {
   "Constructor": "DisplayResult",
   "Options": Object {
     "ID": "component",
-    "containerSelector": "body",
     "result": "a && b",
-    "types": Array [],
   },
   "html": "<div id=\\"result\\">a &amp;&amp; b</div>",
 }
