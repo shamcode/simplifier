@@ -1,6 +1,6 @@
 # Demo for logic-expression-simplifier
 
-[![Build Status](https://travis-ci.com/sham-ui/simplifier.svg?branch=master)](https://travis-ci.com/sham-ui/simplifier)
+[![Build Status](https://travis-ci.com/shamcode/simplifier.svg?branch=master)](https://travis-ci.com/shamcode/simplifier)
 
 Demo application for https://github.com/shamcode/logic-expression-simplify
 
