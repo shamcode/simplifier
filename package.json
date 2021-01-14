@@ -2,7 +2,7 @@
   "name": "simplifier",
   "description": "Demo for logic-expression-simplifier",
   "author": "Eugeny Burnashov <shamcode@gmail.com>",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "license": "MIT",
   "scripts": {
     "start": "node server.js",
@@ -42,11 +42,11 @@
     "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "sass-loader": "~7.1.0",
-    "sham-ui-jest-preprocessor": "^4.0.2",
-    "sham-ui-macro": "^1.0.0",
-    "sham-ui-templates": "^4.0.2",
-    "sham-ui-templates-loader": "^4.0.2",
-    "sham-ui-test-helpers": "^4.0.2",
+    "sham-ui-jest-preprocessor": "^4.1.1",
+    "sham-ui-macro": "^1.1.0",
+    "sham-ui-templates": "^4.2.1",
+    "sham-ui-templates-loader": "^4.1.1",
+    "sham-ui-test-helpers": "^4.1.1",
     "style-loader": "~0.22.1",
     "stylelint": "^10.1.0",
     "stylelint-config-recommended-scss": "^3.3.0",
@@ -58,8 +58,8 @@
   },
   "dependencies": {
     "logic-expression-simplify": "0.0.2",
-    "sham-ui": "^4.0.1",
-    "sham-ui-directives": "^4.0.2"
+    "sham-ui": "^4.1.0",
+    "sham-ui-directives": "^4.1.1"
   },
   "babel": {
     "presets": [

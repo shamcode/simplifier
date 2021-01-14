@@ -1,3 +1,6 @@
+## 0.1.6
+* Update deps
+
 ## 0.1.5
 * Update deps
 
