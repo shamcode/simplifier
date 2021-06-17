@@ -1,31 +1,14 @@
-import simplify from 'logic-expression-simplify';
 import { ref, onsubmit } from 'sham-ui-directives';
-import App from '../components/App.sht';
+import App from '../components/App.sfc';
 
-export default function() {
+export default function( DI ) {
     new App( {
+        DI,
         ID: 'app',
         container: document.querySelector( 'body' ),
         directives: {
             ref,
             onsubmit
-        },
-        result: '',
-        onSubmit( evt, { expression } ) {
-            evt.preventDefault();
-
-            let simplifiedExpression;
-            try {
-                simplifiedExpression = simplify( expression );
-            } catch ( e ) {
-                simplifiedExpression = '';
-            }
-
-            this.update( {
-                result: simplifiedExpression
-            } );
-
-            return false;
         }
     } );
 }

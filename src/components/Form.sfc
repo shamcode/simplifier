@@ -2,12 +2,11 @@
     {% import Input from './Input.sfc' %}
 
     <form
-        :onsubmit={{::this._onSubmit}}
-        :ref="formNode"
+        :onsubmit={{this[ ref( '_onSubmit' ) ]}}
+        :ref={{ref( 'formNode' ) }}
     >
         <Input
             id="input-text"
-            tabindex="1"
             placeholder="(a && b) || (!a && !b)"
             name="expression"
         />
@@ -16,22 +15,21 @@
 </template>
 
 <script>
-    import { mergeWithTemplate, options } from 'sham-ui-macro/babel.macro';
 
-    /**
-     * @property {Element} formNode
-     */
-    @mergeWithTemplate
-    class Form extends Template {
-        @options onSubmit() {}
+    function Form( options ) {
+        const onSubmit = ref();
 
-        _onSubmit( evt ) {
-            const data = new FormData( this.formNode );
-            this.options.onSubmit( evt, {
+        const state = options( {
+            [ onSubmit ]() {}
+        } );
+
+        this[ ref( '_onSubmit' ) ] = ( evt ) => {
+            const data = new FormData( this[ ref( 'formNode' ) ] );
+            state[ onSubmit ]( evt, {
                 expression: data.get( 'expression' )
             } );
-        }
+        };
     }
 
-    export default Form;
+    export default Component( Template, Form );
 </script>

@@ -1,0 +1,10 @@
+[
+  {
+    "path": "dist/bundle.js",
+    "limit": "40 KB"
+  },
+  {
+    "path": "dist/bundle.css",
+    "limit": "10 KB"
+  }
+]

@@ -2,7 +2,6 @@
 
 exports[`renders correctly 1`] = `
 Object {
-  "Constructor": "App",
   "Options": Object {
     "ID": "component",
     "directives": Object {
@@ -15,19 +14,19 @@ Object {
 <header>
   <h1>Logic expressions simplifier</h1>
 </header>
-<!--Header-->
+<!--0-->
 <main>
   <form>
     <input id=\\"input-text\\" placeholder=\\"(a &amp;&amp; b) || (!a &amp;&amp; !b)\\" tabindex=\\"1\\" name=\\"expression\\">
-    <!--Input-->
+    <!--0-->
     <button type=\\"submit\\" tabindex=\\"2\\">Simplify!</button>
   </form>
-  <!--Form-->
+  <!--1-->
   <div id=\\"result\\">a || b</div>
-  <!--DisplayResult-->
+  <!--2-->
 </main>
 <footer></footer>
-<!--Footer-->
+<!--3-->
 ",
 }
 `;

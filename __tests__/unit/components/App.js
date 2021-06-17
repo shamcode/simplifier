@@ -1,4 +1,4 @@
-import App from '../../../src/components/App.sht';
+import App from '../../../src/components/App.sfc';
 import { ref, onsubmit } from 'sham-ui-directives';
 import renderer from 'sham-ui-test-helpers';
 

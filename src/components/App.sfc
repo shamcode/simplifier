@@ -1,0 +1,46 @@
+<template>
+    {% import Header from './Header.sht' %}
+    {% import Footer from './Footer.sht' %}
+    {% import Form from './Form.sfc' %}
+    {% import DisplayResult from './DisplayResult.sht' %}
+
+    <Header/>
+    <main>
+        <Form
+            onSubmit={{onSubmit}}
+        />
+        <DisplayResult
+            result={{result}}
+        />
+    </main>
+    <Footer/>
+</template>
+
+<script>
+    import simplify from 'logic-expression-simplify';
+
+    function App( options, update ) {
+        const result = ref();
+
+        options( {
+            [ result ]: '',
+            [ ref( 'onSubmit' ) ]( evt, { expression } ) {
+                evt.preventDefault();
+
+                let simplifiedExpression;
+                try {
+                    simplifiedExpression = simplify( expression );
+                } catch ( e ) {
+                    simplifiedExpression = '';
+                }
+                update( {
+                    [ result ]: simplifiedExpression
+                } );
+
+                return false;
+            }
+        } );
+    }
+
+    export default Component( Template, App );
+</script>
