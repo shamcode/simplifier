@@ -20,11 +20,11 @@
     import simplify from 'logic-expression-simplify';
 
     function App( options, update ) {
-        const result = ref();
+        const result = $();
 
         options( {
             [ result ]: '',
-            [ ref( 'onSubmit' ) ]( evt, { expression } ) {
+            [ $.onSubmit ]( evt, { expression } ) {
                 evt.preventDefault();
 
                 let simplifiedExpression;

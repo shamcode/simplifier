@@ -16,7 +16,8 @@ module.exports = {
     },
     "globals": {
         "Template": true,
-        "ref": true,
+        "$": true,
+        "this$": true,
         "Component": true
     },
     "plugins": [

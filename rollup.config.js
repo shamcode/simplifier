@@ -55,6 +55,7 @@ export default {
         scss( {
             failOnError: true,
             output: 'dist/bundle.css',
+            outputStyle: 'compressed',
             watch: 'src/styles',
             sass: require( 'sass' )
         } ),

@@ -10,8 +10,8 @@
 <script>
     function Input( options ) {
         options( {
-            [ ref( 'placeholder' ) ]: '',
-            [ ref( 'tabindex' ) ]: 1
+            [ $.placeholder ]: '',
+            [ $.tabindex ]: 1
         } );
     }
 

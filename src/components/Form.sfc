@@ -2,8 +2,8 @@
     {% import Input from './Input.sfc' %}
 
     <form
-        :onsubmit={{this[ ref( '_onSubmit' ) ]}}
-        :ref={{ref( 'formNode' ) }}
+        :onsubmit={{this$._onSubmit}}
+        :ref={{$.formNode}}
     >
         <Input
             id="input-text"
@@ -17,14 +17,14 @@
 <script>
 
     function Form( options ) {
-        const onSubmit = ref();
+        const onSubmit = $();
 
         const state = options( {
             [ onSubmit ]() {}
         } );
 
-        this[ ref( '_onSubmit' ) ] = ( evt ) => {
-            const data = new FormData( this[ ref( 'formNode' ) ] );
+        this$._onSubmit = ( evt ) => {
+            const data = new FormData( this$.formNode );
             state[ onSubmit ]( evt, {
                 expression: data.get( 'expression' )
             } );
