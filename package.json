@@ -31,7 +31,7 @@
     "core-js": "^3.11.3",
     "eslint": "^5.16.0",
     "eslint-plugin-html": "^5.0.5",
-    "eslint-plugin-jest": "^22.6.4",
+    "eslint-plugin-jest": "^24.4.0",
     "jest": "^23.6.0",
     "jest-runner-eslint": "^0.7.4",
     "jest-runner-stylelint": "^1.0.0",
