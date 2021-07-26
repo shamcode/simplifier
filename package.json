@@ -43,7 +43,7 @@
     "rollup-plugin-serve": "^1.1.0",
     "rollup-plugin-sham-ui-templates": "^1.0.9",
     "rollup-plugin-terser": "^7.0.2",
-    "sass": "^1.32.12",
+    "sass": "^1.36.0",
     "sham-ui-macro": "^3.5.0",
     "sham-ui-macro-jest-preprocessor": "^1.0.0",
     "sham-ui-templates": "^5.0.0-alpha.10",
