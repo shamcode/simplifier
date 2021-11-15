@@ -2,7 +2,7 @@
   "name": "simplifier",
   "description": "Demo for logic-expression-simplifier",
   "author": "Eugeny Burnashov <shamcode@gmail.com>",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "license": "MIT",
   "scripts": {
     "start": "MACRO_REF_REPLACE=enabled rollup -w -c",
@@ -44,18 +44,18 @@
     "rollup-plugin-sham-ui-templates": "^1.0.9",
     "rollup-plugin-terser": "^7.0.2",
     "sass": "^1.32.12",
-    "sham-ui-macro": "^3.5.0",
+    "sham-ui-macro": "^3.6.0",
     "sham-ui-macro-jest-preprocessor": "^1.0.0",
-    "sham-ui-templates": "^5.0.0-alpha.10",
-    "sham-ui-templates-jest-preprocessor": "^1.2.5",
-    "sham-ui-test-helpers": "^5.0.0-alpha.11",
+    "sham-ui-templates": "^5.0.0-alpha.12",
+    "sham-ui-templates-jest-preprocessor": "^1.2.7",
+    "sham-ui-test-helpers": "^5.0.0-alpha.13",
     "stylelint": "^10.1.0",
     "stylelint-config-recommended-scss": "^3.3.0",
     "stylelint-scss": "^3.8.0"
   },
   "dependencies": {
     "logic-expression-simplify": "0.0.2",
-    "sham-ui": "^5.0.0-alpha.5",
-    "sham-ui-directives": "^5.0.0-alpha.8"
+    "sham-ui": "^5.0.0-alpha.7",
+    "sham-ui-directives": "^5.0.0-alpha.10"
   }
 }
