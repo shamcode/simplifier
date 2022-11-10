@@ -3,12 +3,7 @@
 exports[`renders correctly 1`] = `
 Object {
   "Options": Object {
-    "ID": "component",
-    "directives": Object {
-      "onsubmit": [Function],
-      "ref": [Function],
-    },
-    "result": "a || b",
+    "result": "a && b",
   },
   "html": "
 <header>
@@ -22,7 +17,7 @@ Object {
     <button type=\\"submit\\" tabindex=\\"2\\">Simplify!</button>
   </form>
   <!--1-->
-  <div id=\\"result\\">a || b</div>
+  <div id=\\"result\\">a &amp;&amp; b</div>
   <!--2-->
 </main>
 <footer></footer>

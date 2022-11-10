@@ -3,7 +3,6 @@
 exports[`renders correctly 1`] = `
 Object {
   "Options": Object {
-    "ID": "component",
     "placeholder": "",
     "tabindex": 1,
   },
@@ -14,7 +13,6 @@ Object {
 exports[`with props 1`] = `
 Object {
   "Options": Object {
-    "ID": "component",
     "id": "expression-input",
     "name": "expression",
     "placeholder": "a && b",

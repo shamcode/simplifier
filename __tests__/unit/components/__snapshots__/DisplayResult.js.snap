@@ -3,7 +3,6 @@
 exports[`renders correctly 1`] = `
 Object {
   "Options": Object {
-    "ID": "component",
     "result": "a && b",
   },
   "html": "<div id=\\"result\\">a &amp;&amp; b</div>",

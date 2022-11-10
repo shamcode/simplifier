@@ -4,7 +4,7 @@ import renderer from 'sham-ui-test-helpers';
 it( 'renders correctly', () => {
     const meta = renderer( Input );
 
-    expect( meta.component.container.innerHTML ).toEqual( '<input placeholder="" tabindex="1">' );
+    expect( meta.ctx.container.innerHTML ).toEqual( '<input placeholder="" tabindex="1">' );
     expect( meta.toJSON() ).toMatchSnapshot();
 } );
 

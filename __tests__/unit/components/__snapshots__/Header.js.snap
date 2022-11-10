@@ -2,9 +2,7 @@
 
 exports[`renders correctly 1`] = `
 Object {
-  "Options": Object {
-    "ID": "component",
-  },
+  "Options": Object {},
   "html": "
 <header>
   <h1>Logic expressions simplifier</h1>

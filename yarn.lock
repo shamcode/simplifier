@@ -2519,9 +2519,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001219:
-  version "1.0.30001331"
-  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001331.tgz"
-  integrity sha512-Y1xk6paHpUXKP/P6YjQv1xqyTbgAP05ycHBcRdQjTcyXlWol868sJJPlmk5ylOekw2BrucWes5jk+LvVd7WZ5Q==
+  version "1.0.30001431"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001431.tgz"
+  integrity sha512-zBUoFU0ZcxpvSt9IU66dXVT/3ctO1cy4y9cscs1szkPlcWb6pasYM144GqrUygUbT+k7cmUCW61cvskjcv0enQ==
 
 capture-exit@^1.2.0:
   version "1.2.0"
@@ -8864,13 +8864,13 @@ rollup-plugin-serve@^1.1.0:
     mime ">=2.4.6"
     opener "1"
 
-rollup-plugin-sham-ui-templates@^1.0.15:
-  version "1.0.15"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-sham-ui-templates/-/rollup-plugin-sham-ui-templates-1.0.15.tgz#e2b9cb74bdc8879cb0376ee8b63175c77b93dcd1"
-  integrity sha512-/py8C77+llDOKo4LCZAFcoTEKbIc9Xit3p6k3RXXYzIbVXgMwgWGLL3lgVwwqtxf5xMASPxe7AxM/gcHalFddA==
+rollup-plugin-sham-ui-templates@^1.0.19:
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-sham-ui-templates/-/rollup-plugin-sham-ui-templates-1.0.19.tgz#3be64f4d082e4437558b85bd70e530dc3cbea7f4"
+  integrity sha512-s+xVLLzKAfGtD+umrOs6yj2gqQPrlNGPC9DTp2iUKDrREJKz2kYXm7jDI5NG5xResca5apd8UPvoS3Wqiq75lg==
   dependencies:
     "@rollup/pluginutils" "^3.1.0"
-    sham-ui-templates "^5.0.0-alpha.16"
+    sham-ui-templates "^6.0.0-alpha.4"
     source-map "^0.5.6"
 
 rollup-plugin-terser@^7.0.2:
@@ -9128,10 +9128,10 @@ sha.js@^2.4.0, sha.js@^2.4.8:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-sham-ui-directives@^5.0.0-alpha.13:
-  version "5.0.0-alpha.13"
-  resolved "https://registry.yarnpkg.com/sham-ui-directives/-/sham-ui-directives-5.0.0-alpha.13.tgz#0c7c836dd33e41c83530fe993cd548e5e5d0b0cb"
-  integrity sha512-uOObm6JMhZvh/1E2lKKJuZYdNZSo3YcPWT0CjR8gTNbTGULdNNpvcoOU2h8z6dOfditj2G5oQqik1cJic+2p+Q==
+sham-ui-directives@^6.0.0-alpha.4:
+  version "6.0.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/sham-ui-directives/-/sham-ui-directives-6.0.0-alpha.4.tgz#ffbd769a48ed39a4f34ad67056ec61ad11a1056b"
+  integrity sha512-4YgIJQfZqAxvvkmJQsMKP7A8h+IhvCIfcUH2ayakt+SEjM91eaAH9lkdpzKKg2sykyv3zrn6ADBcP8UZj6Fbgw==
 
 sham-ui-macro-jest-preprocessor@^1.0.0:
   version "1.0.0"
@@ -9150,28 +9150,28 @@ sham-ui-macro@^3.6.0:
     babel-macros "^1.0.2"
     babel-types "^6.26.0"
 
-sham-ui-templates-jest-preprocessor@^1.2.10:
-  version "1.2.10"
-  resolved "https://registry.yarnpkg.com/sham-ui-templates-jest-preprocessor/-/sham-ui-templates-jest-preprocessor-1.2.10.tgz#a3d5b66a169ae90a979fd973270fac150681b7e3"
-  integrity sha512-Yjo1cfadG1iBSJ2XITco/BMroBn3DpcJEbUl2ZkRC09tSRb5uU5XftidWZ3yyJke9QfLASE03Y1ZOamp/cGJCw==
+sham-ui-templates-jest-preprocessor@^1.2.14:
+  version "1.2.14"
+  resolved "https://registry.yarnpkg.com/sham-ui-templates-jest-preprocessor/-/sham-ui-templates-jest-preprocessor-1.2.14.tgz#75c7ddbd0d8f6ff29620192a4ba2e7f358533740"
+  integrity sha512-xYY1quG6olprDm1c+Od/Sz61Jbb9rldXF8PLosK3Llg/T+E9JLQGAJ5doyN+K8JrPZq5585koE2ZadXofMXrrA==
   dependencies:
-    sham-ui-templates "^5.0.0-alpha.16"
+    sham-ui-templates "^6.0.0-alpha.4"
     source-map "^0.5.6"
 
-sham-ui-templates@^5.0.0-alpha.16:
-  version "5.0.0-alpha.16"
-  resolved "https://registry.yarnpkg.com/sham-ui-templates/-/sham-ui-templates-5.0.0-alpha.16.tgz#2808daf20c43a6245317503a42dcf6100ce1d4e0"
-  integrity sha512-3hSrctNphYBm6XXcUqsze/vegR8C4NC4n6p/U3g6FbIMvwDLdFnJ0J2i7bmlgK21FBxk9bNCsWmBTQAWDvWXgg==
+"sham-ui-templates@^ 6.0.0-alpha.4", sham-ui-templates@^6.0.0-alpha.4:
+  version "6.0.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/sham-ui-templates/-/sham-ui-templates-6.0.0-alpha.4.tgz#279e8101bde6ab94db8ffc083e6e2d85c83c6ba1"
+  integrity sha512-nq/R+mzatBmJrd4elTwJpcVebTx3yCtpUxNLZvaM0Uk/ofbfeIqgtTxXX/baniTZCMtpQikqeqwE/Fbeom5WwA==
   dependencies:
     asciitree "^1.0.2"
-    sham-ui "5.0.0-alpha.8"
+    sham-ui "6.0.0-alpha.3"
     sham-ui-macro "^3.6.0"
     source-map "^0.5.7"
 
-sham-ui-test-helpers@^5.0.0-alpha.16:
-  version "5.0.0-alpha.16"
-  resolved "https://registry.yarnpkg.com/sham-ui-test-helpers/-/sham-ui-test-helpers-5.0.0-alpha.16.tgz#262ea6950bd34de632bec80e54fa4f061807910a"
-  integrity sha512-3iIGrESsSTo0jpyor7AUnEVaYQWpL2Mr4k1w/7FdUe3NqHScJtht3y709K2EQ1EP0/3EIyGI0SPCiS6xUzORng==
+sham-ui-test-helpers@^6.0.0-alpha.4:
+  version "6.0.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/sham-ui-test-helpers/-/sham-ui-test-helpers-6.0.0-alpha.4.tgz#b0c76a0a1bd0751376459283f52f8dc05905288e"
+  integrity sha512-rPu4eqiYUKztt++RIxoPCvdJbyPN0pOQ705kKNy2tKU8ROlG5WrhkzX45h/TwpIa9StQdLg1oxfY+OmTg7A3lg==
   dependencies:
     "@babel/runtime" "^7.14.0"
     babel-core "^7.0.0-bridge.0"
@@ -9179,13 +9179,13 @@ sham-ui-test-helpers@^5.0.0-alpha.16:
     find-babel-config "^1.2.0"
     jest "^24.9.0"
     pretty "^2.0.0"
-    sham-ui "^5.0.0-alpha.8"
-    sham-ui-templates "^5.0.0-alpha.16"
+    sham-ui "^ 6.0.0-alpha.3"
+    sham-ui-templates "^ 6.0.0-alpha.4"
 
-sham-ui@5.0.0-alpha.8, sham-ui@^5.0.0-alpha.8:
-  version "5.0.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/sham-ui/-/sham-ui-5.0.0-alpha.8.tgz#116707a1ba194e866e748b5e56a5e8555a87d624"
-  integrity sha512-H3NcvefeZuQfBh1Yn5wCcHFrfWTpTcW6oC70TlWCzDEFSeViznErdvHY98rGPmhsylX/QATYKmTpFb7twiWbpw==
+sham-ui@6.0.0-alpha.3, "sham-ui@^ 6.0.0-alpha.3", sham-ui@^6.0.0-alpha.3:
+  version "6.0.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/sham-ui/-/sham-ui-6.0.0-alpha.3.tgz#b9d5fc320e25bcb4d41371f266351dba9077f6a4"
+  integrity sha512-lYE0Kwueqy16XYBQojHJ1T+N1kqSyKYGIpW3+9Ygzk/1h2x9ARwFuG5XUUBA6hThIF8LLc0iBIZfTgE4cBlMdA==
   dependencies:
     nanoid "^1.3.1"
 

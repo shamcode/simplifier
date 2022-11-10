@@ -3,7 +3,7 @@ import { ref, onsubmit } from 'sham-ui-directives';
 import renderer from 'sham-ui-test-helpers';
 
 it( 'renders correctly', () => {
-    const meta = renderer( Form, {
+    const meta = renderer( Form, {}, {
         directives: {
             ref,
             onsubmit
@@ -17,16 +17,17 @@ it( 'onSubmit options', () => {
     const fn = jest.fn();
 
     const meta = renderer( Form, {
+        onSubmit: fn
+    }, {
         directives: {
             ref,
             onsubmit
-        },
-        onSubmit: fn
+        }
     } );
 
     meta.component.update();
-    meta.component.container.querySelector( 'input' ).value = 'a && b';
-    meta.component.container.querySelector( 'form' ).dispatchEvent( new Event( 'submit' ) );
+    meta.ctx.container.querySelector( 'input' ).value = 'a && b';
+    meta.ctx.container.querySelector( 'form' ).dispatchEvent( new Event( 'submit' ) );
 
     const json = meta.toJSON();
     delete json.Options.onSubmit;
@@ -40,7 +41,7 @@ it( 'onSubmit props', () => {
     expect.assertions( 3 );
     const fn = jest.fn();
 
-    const meta = renderer( Form, {
+    const meta = renderer( Form, {}, {
         directives: {
             ref,
             onsubmit
@@ -50,8 +51,8 @@ it( 'onSubmit props', () => {
     meta.component.update( {
         onSubmit: fn
     } );
-    meta.component.container.querySelector( 'input' ).value = 'a && b';
-    meta.component.container.querySelector( 'form' ).dispatchEvent( new Event( 'submit' ) );
+    meta.ctx.container.querySelector( 'input' ).value = 'a && b';
+    meta.ctx.container.querySelector( 'form' ).dispatchEvent( new Event( 'submit' ) );
 
     const json = meta.toJSON();
     delete json.Options.onSubmit;

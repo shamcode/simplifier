@@ -7,7 +7,7 @@
     <Header/>
     <main>
         <Form
-            onSubmit={{onSubmit}}
+            onSubmit={{this$.onSubmit}}
         />
         <DisplayResult
             result={{result}}
@@ -19,27 +19,23 @@
 <script>
     import simplify from 'logic-expression-simplify';
 
-    function App( options, update ) {
+    function App( options ) {
         const result = $();
 
-        options( {
-            [ result ]: '',
-            [ $.onSubmit ]( evt, { expression } ) {
-                evt.preventDefault();
-
-                let simplifiedExpression;
-                try {
-                    simplifiedExpression = simplify( expression );
-                } catch ( e ) {
-                    simplifiedExpression = '';
-                }
-                update( {
-                    [ result ]: simplifiedExpression
-                } );
-
-                return false;
-            }
+        const state = options( {
+            [ result ]: ''
         } );
+
+        this$.onSubmit = ( evt, { expression } ) => {
+            evt.preventDefault();
+            let simplifiedExpression;
+            try {
+                simplifiedExpression = simplify( expression );
+            } catch ( e ) {
+                simplifiedExpression = '';
+            }
+            state[ result ] = simplifiedExpression;
+        };
     }
 
     export default Component( Template, App );
